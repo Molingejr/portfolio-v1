@@ -1,0 +1,55 @@
+.navbar {
+    background-color: $nav-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+    .nav-menu {
+        li, a {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #F5E5D7;
+            text-decoration: none;
+        }
+
+        list-style: none;
+        li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        li a {
+            transition: all 0.3s ease 0s;
+        }
+        li a:hover {
+           color: #0088a9;
+        }
+       
+    }
+
+    .resume-btn {
+        text-decoration: none;
+        margin-left: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: $green;
+        padding: 9px 25px;
+        background-color: transparent;
+        border: 1px solid $green;
+        opacity: 1;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .resume-btn:hover {
+        background-color: #0c2b23;
+    }
+
+    .nav-logo {
+        cursor: pointer;
+        width: 60%;
+    }
+    
+}
