@@ -8,8 +8,8 @@ export default class Footer extends Component {
 
     render(){
         return (
-            <footer >
-                
+            <footer className="footer">
+                Footer
             </footer>
         )
     }

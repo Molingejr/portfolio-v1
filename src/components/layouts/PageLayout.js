@@ -4,7 +4,7 @@ import '../../assets/styles/app.scss';
 
 export default (props) => {
     return (
-        <div className>
+        <div className="container">
             <Header activeSection={props.activeSection}/>
             {props.children}
             <Footer />

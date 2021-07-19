@@ -1,3 +1,21 @@
-@import './variables';
-@import './_header.scss';
-@import './_main.scss';
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+@import "../../../static/styles/fontawesome/css/all.min.css";
+
+@import "./abstracts/variables";
+
+@import "./base/main";
+
+@import "./pages/home";
+
+@import "./components/button";
+
+@import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/heroWidget";
+@import "./layout/about";
+@import "./layout/projects";
+@import "./layout/contact";
+@import "./layout/footer";

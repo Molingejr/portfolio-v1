@@ -1,0 +1,36 @@
+.hero {
+  grid-column: full-start / full-end;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   #2d7e9270 0%,
+  //   #1c40617c 100%
+  // );
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 1;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    margin-left: 5rem;
+    flex: 0 0 50%;
+
+    .hero__text {
+      font-weight: 500;
+      font-size: 1.5vw; //2.4rem;
+      color: white;
+    }
+
+    .btn {
+      margin-top: 3rem;
+      align-self: flex-start;
+    }
+  }
+}

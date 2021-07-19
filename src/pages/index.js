@@ -1,16 +1,23 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import PageLayout from '../components/layouts/PageLayout';
-import { HeroWidget } from '../components/index';
+import { HeroWidget, About, Projects, Contact } from '../components/index';
 import { graphql } from 'gatsby';
 
 const Index = ({data}) => {
     console.log("Our data is: ", data)
     const hero = data.contentfulWidgetHero
+    
     return (
         <PageLayout>
             <Helmet title="Molinge" />
-            <HeroWidget data={hero}/>
+            <div className="container--home">
+                <HeroWidget data={hero}/>
+                <About />
+                <Projects />
+                <Contact />
+            </div>
+            
         </PageLayout>
     )
 }
@@ -25,11 +32,11 @@ export const query = graphql`
                 raw
             }
             backgroundImage {
-                file {
-                    url
-          }
+               fluid(maxWidth: 1400, quality: 100) {
+                   ...GatsbyContentfulFluid
+               }
+            }
         }
-      }
     }
 `
 

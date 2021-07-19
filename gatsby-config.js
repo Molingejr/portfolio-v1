@@ -35,7 +35,15 @@ module.exports = {
         icon: `${__dirname}/src/assets/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
-    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-google-fonts`,
