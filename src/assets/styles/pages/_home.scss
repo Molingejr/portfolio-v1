@@ -7,4 +7,12 @@
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(6rem, auto) [full-end];
+  grid-row-gap: 1.4rem;
+
+  & > *:not(:first-child) {
+    margin-bottom: 10rem;
+  }
+
+  background-color: $color-light-grey;
+  //color: $color-light-grey;
 }

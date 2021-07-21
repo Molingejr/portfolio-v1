@@ -50,7 +50,8 @@ module.exports = {
       options: {
         fonts: [
           `montserrat`,
-          `open sans`
+          `open sans`,
+          `Sofia`
         ],
         display: 'swap'
       }

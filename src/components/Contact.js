@@ -7,7 +7,16 @@ class Contact extends Component{
     
         return (
             <div className="contact">
-                Contact
+                <div className="contact__heading">
+                     Get In Touch
+                </div>
+
+                <div class="contact__message">
+                    My inbox is always open in case you want to have a chat or just want to say hi.
+                </div>
+
+                <button className="btn">Send a message</button>
+               
             </div>
         )
     }

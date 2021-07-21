@@ -61,17 +61,17 @@ export default class Header extends Component {
                     </span>
                     <nav className={this.state.showNav ? "navbar__menu navbar__responsive" : "navbar__menu"}>
                         <ul>
-                            <li className={activeSection === "/about" ? 'navbar__item active': 'navbar__item'}>
-                                <Link to="/about" className="navbar__link">About</Link>
+                            <li className={activeSection === "/#about" ? 'navbar__item active': 'navbar__item'}>
+                                <Link to="#about" className="navbar__link">About</Link>
                             </li>
-                            <li className={activeSection === "/experience" ? 'navbar__item active': 'navbar__item'}>
-                                <Link to="/experience" className="navbar__link">Experience</Link>
+                            <li className={activeSection === "/#experience" ? 'navbar__item active': 'navbar__item'}>
+                                <Link to="#experience" className="navbar__link">Experience</Link>
                             </li>
-                            <li className={activeSection === "/work" ? 'navbar__item active': 'navbar__item'}>
-                                <Link to="/work" className="navbar__link">Work</Link>
+                            <li className={activeSection === "/#work" ? 'navbar__item active': 'navbar__item'}>
+                                <Link to="/#work" className="navbar__link">Work</Link>
                             </li>
-                            <li className={activeSection === "/contact" ? 'navbar__item active': 'navbar__item'}>
-                                <Link to="/contact" className="navbar__link">Contact</Link>
+                            <li className={activeSection === "/#contact" ? 'navbar__item active': 'navbar__item'}>
+                                <Link to="/#contact" className="navbar__link">Contact</Link>
                             </li>
                         </ul>
                         <Link to="/resume" className="btn"><span>Resume</span></Link>

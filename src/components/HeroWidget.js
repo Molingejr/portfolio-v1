@@ -7,7 +7,7 @@ import richtextRenderer from '../utils/richtextRenderer';
 class HeroWidget extends Component{
     render(){
         const { title, summary, backgroundImage } = this.props.data;
-        console.log(backgroundImage)
+        
         return(
             <div className="hero" style={{ backgroundImage: `url(${backgroundImage.fluid.src})` }}>
                 {/* <Img fluid={backgroundImage.fluid} /> */}

@@ -1,3 +1,33 @@
 .about {
-    grid-column: center-start / center-end;
+  grid-column: center-start / center-end;
+  margin-top: 10rem;
+
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 3rem;
+  }
+
+  &__body &__summary {
+    font-size: 1.8rem;
+    align-self: start;
+    grid-column: span 2;
+
+    & > ul {
+      margin-left: 2rem;
+    }
+  }
+
+  &__body &__image {
+    border-radius: 0.8rem;
+    object-fit: contain;
+    &:hover {
+      transform: scaleX(-1);
+    }
+  }
 }
