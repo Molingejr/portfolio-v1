@@ -1,4 +1,4 @@
-.projects {
+.skills {
   grid-column: center-start / center-end;
 
   &__heading {
@@ -9,5 +9,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
+
+    font-size: 2em;
   }
 }

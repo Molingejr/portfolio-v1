@@ -9,15 +9,14 @@ class HeroWidget extends Component{
         const { title, summary, backgroundImage } = this.props.data;
         
         return(
-            <div className="hero" style={{ backgroundImage: `url(${backgroundImage.fluid.src})` }}>
-                {/* <Img fluid={backgroundImage.fluid} /> */}
+            <section className="hero" style={{ backgroundImage: `url(${backgroundImage.fluid.src})` }}>
                 <div className="hero__content">
                     <div className="hero__text">
                         <p>{summary && renderRichText(summary, richtextRenderer)}</p>
                     </div>
-                    <Link to="/contact" className="btn"><span>Get in touch</span></Link>
+                    <a href="mailto:molingejr@gmail.com" target="_blank" className="btn"><span>Get in touch</span></a>
                 </div>
-            </div>
+            </section>
         )
     }
 }

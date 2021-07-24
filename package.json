@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@hookstate/core": "^3.0.8",
     "autoprefixer": "^10.2.6",
     "gatsby": "^3.4.0",
     "gatsby-background-image": "^1.5.3",

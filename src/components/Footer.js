@@ -9,7 +9,15 @@ export default class Footer extends Component {
     render(){
         return (
             <footer className="footer">
-                Footer
+                <div className="footer__content">
+                    &copy; Copyright 2021
+
+                    <div className="footer__social">
+                        <a href="https://www.linkedin.com/in/molinge-jr/"><i className='fab fa-linkedin'></i></a>
+                        <a href="https://github.com/Molingejr"><i className='fab fa-github'></i></a>
+                    </div>
+                </div>
+                
             </footer>
         )
     }

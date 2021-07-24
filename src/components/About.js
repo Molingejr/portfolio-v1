@@ -8,8 +8,8 @@ class About extends Component{
         const { title, summary, image } = this.props.data;
 
         return (
-            <div id="about" className="about">   
-                <div className="about__title">
+            <section id="about" className="about">   
+                <div className="section-heading about__title">
                     {title && title}
                 </div>  
 
@@ -19,7 +19,7 @@ class About extends Component{
                         {summary && renderRichText(summary, richtextRenderer)}
                     </div>
                 </div>                    
-            </div>
+            </section>
         )
     }
 }

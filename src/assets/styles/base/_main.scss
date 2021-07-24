@@ -13,6 +13,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px, i.e. 10px/16px = 62.5%
+  scroll-padding-top: 11rem;
 }
 
 body {
@@ -22,9 +23,4 @@ body {
 }
 
 .container {
-  // display: flex;
-  // flex-direction: column;
-  // display: grid;
-  // grid-template-rows: min-content 1fr min-content;
-  // grid-template-columns: 1fr;
 }

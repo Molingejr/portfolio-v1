@@ -8,12 +8,16 @@
 }
 
 .navbar {
-  background-color: $color-primary;
+  background-color: transparent;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
   padding: 3rem 10%;
+
+  &__scroll {
+    background-color: $color-primary;
+  }
 
   &__menu {
     display: flex;
@@ -50,8 +54,8 @@
 
   &__logo {
     cursor: pointer;
-    height: 4.25rem;
-    width: 6rem;
+    height: 5rem;
+    width: 10rem;
     display: inline-block;
   }
 
