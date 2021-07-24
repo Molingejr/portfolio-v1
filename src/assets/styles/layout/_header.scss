@@ -68,7 +68,7 @@
     display: none;
   }
 
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: $bp-medium) {
     //800px
     &__toggle {
       display: inline-block;
