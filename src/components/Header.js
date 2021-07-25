@@ -30,8 +30,7 @@ const SideNav = (props) =>
                                             
                         </li>
                     </ul>
-                    
-                    <Link to="/resume" className="btn"><span>Resume</span></Link>
+                    <a onClick={() => props.downloadPDF(props.resume)} className="btn" target="_blank"><span>Resume</span></a>
                 </nav>
             </div>
 
@@ -111,7 +110,7 @@ export default class Header extends Component {
                         </nav>
                     </div> 
             </header>
-            { this.state.showNav && <SideNav activeSection={activeSection} showNav={this.state.showNav} toggleNav={this.toggleNav}/>}
+            { this.state.showNav && <SideNav activeSection={activeSection} showNav={this.state.showNav} toggleNav={this.toggleNav} downloadPDF={this.downloadPDF} resume={resume}/>}
             
             </section>
         )

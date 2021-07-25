@@ -44,7 +44,7 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-react-helmet",
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -55,6 +55,7 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+    `gatsby-plugin-styled-components`
   ],
 };

@@ -1,10 +1,29 @@
 import React, { Component } from 'react';
+import styled, { keyframes } from "styled-components";
+
+const progressKeyframe = (percentage) => keyframes`
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: ${percentage}%;
+    }
+  }
+`
+const SkillProgress = styled.span`
+  animation: ${props => progressKeyframe(props.percentage)} 4s infinite cubic-bezier(1, 0, 0, 1)
+
+`
 
 const Skill = (props) => {
     const skill = props.data
     return (
         <div className="skills__skill">
-            {skill.name}
+            <h4>{skill.name}</h4>
+            <div className="skills__skill--progress">
+                <SkillProgress percentage={skill.percentage}/>
+            </div>
         </div>
     )
 }
