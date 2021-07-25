@@ -29,7 +29,6 @@ const Index = ({data}) => {
     )
 }
 
-
 export const query = graphql`
     query MyQuery {
         contentfulWidgetHero(slug: {eq: "molinge-lyonga"}){
@@ -67,6 +66,7 @@ export const query = graphql`
                 }
                 items
                 url
+                color
             }
         }
 
@@ -77,6 +77,7 @@ export const query = graphql`
                 summary {
                     summary
                 }
+                color
             }
         }
 

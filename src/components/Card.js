@@ -4,7 +4,7 @@ const Card = (props) => {
     const cardData = props.data;
 
     return (
-        <div className="card">
+        <div className="card" style={{ backgroundColor: `${cardData.color}` }}>
             <div className="card__head">
                 <div className="card__heading">{cardData.heading}</div>
                 <div className="card__summary">{cardData.summary.summary}</div>

@@ -1,3 +1,4 @@
+import { white } from 'gatsby-cli/node_modules/chalk';
 import React, { Component } from 'react';
 
 import  { Card } from './index';
